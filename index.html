@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/pagevideo.css"/>
+    <link rel="icon" type="image/x-icon" href="./assets/images/bmw.ico">
+    <title>Al Lozaine</title>
+
+    <style>
+  .filled-button{
+	   background-color: #a4c639;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all 0.3s;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+ a.filled-button{
+  text-decoration: none;
+}
+    </style>
+
+
+</head>
+<body>
+     <!-- Video Source -->
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  <section class="showcase">
+      <header>
+        <div class="logo_section"> 
+          <img src="./assets/images/allojaine-logo.png"/>
+        </div>
+        <div class="toggle"></div>
+      </header>
+    <video src="./assets/video/intro-video.mp4" muted loop autoplay></video>
+    <!-- <div class="overlay"></div> -->
+    <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+      <a  class="filled-button toggle-nav">Book Now</a> 
+      <!-- <a href="#">Explore</a> -->
+    </div>
+    <ul class="social">
+      <li><a href="https://www.facebook.com/celestin.bonaventure" target="_blank"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="https://twitter.com/NabeelJ95636954"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="https://www.instagram.com/nabeeltech360/"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+      <li><a href="main.html">Home</a></li>
+      <!-- <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li> -->
+    </ul>
+  </div>
+  <script>
+       const menuToggleNav = document.querySelector('.toggle-nav');
+       const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+        
+      })
+
+      menuToggleNav.addEventListener('click', () => {
+        menuToggleNav.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+
+  </script>
+</body>
+</html>
