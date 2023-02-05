@@ -26,9 +26,50 @@
     html {
     scroll-behavior: smooth;
   }
+
+  body{
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .show-add{
+    position: fixed;
+    display: block;
+    z-index: 2000;
+    top: 40%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 30rem;
+    border: none;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background-image: url("./assets/images/add-banner.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    transition: all .5s;
+  }
+
+  @keyframes content {
+      0% {top: -30%}
+      100% {top: 40%;}
+  }
+
   </style>
 
   <body>
+
+    <div class="dropdown"></div>
+    <div class="show-add">
+        <h1 style="position:absolute; border: none; left:0; top: 0px; background-color: white; margin: 15px; padding: 8px;cursor: pointer;z-index: 100;" id="close-ad">
+          <i class="fa fa-times" aria-hidden="true" ></i>
+        </h1>
+    </div>
 
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
@@ -503,7 +544,7 @@
           }
       }
     </script>
-
+    <script src="./assets/js/app.js"></script>
     <script src="./assets/js/tawk.js"></script>
     <script src="./assets/js/whatsup.js"></script>  
   </body>

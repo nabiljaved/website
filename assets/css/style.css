@@ -5,6 +5,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
 /* 
 @media only screen and (max-width: 768px) {
 	.whatsup a {
@@ -259,7 +261,7 @@ a.border-button:hover {
 /* Header Style */
 header {
 	position: absolute;
-	z-index: 99999;
+	z-index: 1000;
 	width: 100%;
 	background-color: transparent!important;
 	height: 80px;
