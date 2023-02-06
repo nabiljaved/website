@@ -1,14 +1,9 @@
   
   const whatsupA =  document.querySelector(".whatsup a");
-  const whatsup = document.querySelector(".whatsup");
   const whatsupoffers = document.querySelector(".whatsup_buttons a");
- 
-
   var x = window.matchMedia("(max-width: 700px)");
-  
-  whatsup.addEventListener("click", function(){
-      
-  })
+  //console.log(whatsupoffers.href)
+
 
   function myFunction(x) {
     if (x.matches) { // If media query matches
