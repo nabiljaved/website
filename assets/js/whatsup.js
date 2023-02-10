@@ -8,8 +8,8 @@
   function myFunction(x) {
     if (x.matches) { // If media query matches
       whatsupA.href = "https://api.whatsapp.com/send?phone=+971564013448";
-      whatsupoffers.href = "https://api.whatsapp.com/send?phone=+971564013448";
-      // console.log(whatsupoffers.href)
+      whatsupoffers.href = "https://api.whatsapp.com/send?phone=+971564013448" ;
+      console.log(whatsupoffers.href)
     } else {
       // // document.body.style.backgroundColor = "pink";
       // whatsupA.href = "https://web.whatsapp.com/send?phone=+971564013448";
