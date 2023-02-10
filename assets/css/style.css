@@ -7,15 +7,6 @@ body {
 }
 
 
-
-@media only screen and (max-width: 600px) {
-	
-		.show-add{
-			display: none;	
-		}
-
-  } 
-
 .whatsup_buttons a:hover{
 	color: white !important;
 	background-color: green !important;

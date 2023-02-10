@@ -1,19 +1,5 @@
 
 
-
-
-
-let myMediaQuery = window.matchMedia('(max-width: 900px)');
-  function widthChangeCallback(myMediaQuery) {
-    if(myMediaQuery.matches) {
-      const bann = document.querySelector('.show-add');
-      bann.style.display = 'none'        
-     } else {
-   
-     }
-  }
-  myMediaQuery.addEventListener('change', widthChangeCallback);
-
   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
   
     const bann = document.querySelector('.show-add');
